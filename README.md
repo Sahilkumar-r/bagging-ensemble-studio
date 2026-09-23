@@ -17,16 +17,35 @@ A robust, interactive Streamlit web application that allows users to build, conf
 
 ## 🛠️ Installation
 
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/bagging-ensemble-studio.git
-   cd bagging-ensemble-studio
-   ```
+First, clone this repository to your local machine and navigate into the directory:
+```bash
+git clone https://github.com/yourusername/bagging-ensemble-studio.git
+cd bagging-ensemble-studio
+```
 
-2. Install the required Python dependencies. It is recommended to use a virtual environment:
-   ```bash
-   pip install streamlit pandas numpy scikit-learn
-   ```
+Choose one of the following methods to install the dependencies:
+
+### Option 1: Standard Installation using `pip`
+It is recommended to set up a virtual environment first, then use the provided `requirements.txt` file:
+```bash
+# Create and activate a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Option 2: Ultra-fast Installation using `uv`
+If you use [uv](https://github.com/astral-sh/uv) (an extremely fast Python package installer and resolver), you can initialize a project environment and add the dependencies directly:
+```bash
+# Initialize a uv project
+uv init
+
+# Add the required packages
+uv add streamlit pandas numpy scikit-learn
+```
+*(Note: You can also simply run `uv pip install -r requirements.txt` to use the existing file with uv).*
 
 ## 🚀 Usage
 
